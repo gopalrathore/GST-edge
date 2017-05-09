@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form GSTR - 1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div id="section-1" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2>Form GSTR - 1</h2>
+          <h2 class="form-name"><span class="count">1</span> details of outward supplies</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <label><span>GSTIN</span><input type="text" placeholder="GSTIN"></label>
+              <label><span>Name of taxable person</span><input type="text" placeholder="Name of taxable person"></label>
+            </div>
+            <div class="row">
+              <label><span>Aggregate turnover of the taxable person in previous FY</span><input type="text" placeholder="Aggregate turnover of the taxable person in previous FY"></label>
+            </div>
+            <div class="row">
+              <label><span>Period</span><input type="text" placeholder="Period"></label>
+              <label><span>Month</span>  <input type="text" placeholder="Month"></label>
+              <label><span>Year</span><input type="text" placeholder="Year"></label>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+
+            <a href="#section-2">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div id="section-2" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">2</span> Taxable outward supplies to a registered person</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <label><span>GSTIN/UIN</span><input type="text" placeholder="GSTIN/UIN"></label>
+            </div>
+            <h2>Invoice:</h2>
+            <div class="row">
+              <label><span>No.</span><input type="text" placeholder="No."></label>
+              <label><span>Date</span><input class="datepicker" type="text" placeholder="Date" readonly></label>
+              <label><span>Value</span><input type="text" placeholder="Value"></label>
+              <label><span>Goods/Services</span><input type="text" placeholder="Goods/Services"></label>
+              <label><span>HSN/SAC</span><input type="text" placeholder="HSN/SAC"></label>
+              <label><span>Taxable Value</span>  <input type="text" placeholder="Taxable Value"></label>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h2>IGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span>  <input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>CGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>SGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span>  <input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+            </div>
+            <h2>POS:</h2>
+            <div class="row">
+              <label><span>Only if diffrent from the location of recipient</span><input type="text" placeholder="Only if diffrent from the location of recipient"></label>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-1"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+              <a href="#section-3">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <div id="section-3" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">3</span>Taxable outward supplies to a consumer where Place of Supply (State Code) is other than the state where supplier is located (Inter-state supplies) and Invoice value is more than &#8377;2.5 lakhs</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <div class="column">
+                <div class="row">
+                  <label><span>Recipient's State Code</span>  <input type="text" placeholder="Recipient's State Code"></label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="row">
+                  <label><span>Name of the recipient</span><input type="text" placeholder="Name of the recipient"></label>
+                </div>
+              </div>
+            </div>
+            <h2>Invoice:</h2>
+            <div class="row">
+              <label><span>No.</span><input type="text" placeholder="No."></label>
+              <label><span>Date</span><input class="datepicker" type="text" placeholder="Date" readonly></label>
+              <label><span>Value</span><input type="text" placeholder="Value"></label>
+              <label><span>Goods/Services</span><input type="text" placeholder="Goods/Services"></label>
+              <label><span>HSN/SAC</span>  <input type="text" placeholder="HSN/SAC"></label>
+              <label><span>Taxable Value</span><input type="text" placeholder="Taxable Value"></label>
+            </div>
+            <h2>IGST:</h2>
+            <div class="row">
+              <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+              <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+            </div>
+            <h2>POS:</h2>
+            <div class="row">
+              <label><span>Only if diffrent from the location of recipient</span><input type="text" placeholder="Only if diffrent from the location of recipient"></label>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-2"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+              <a href="#section-4" >Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div id="section-4" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">4</span>Taxable outward supplies to consumer (Other  than 6 above)</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <div class="column">
+                <div class="row">
+                  <label><span>Goods/Services</span>  <input type="text" placeholder="Goods/Services"></label>
+                </div>
+                <div class="row">
+                  <label><span>HSN/SAC</span>  <input type="text" placeholder="HSN/SAC"></label>
+                </div>
+              </div>
+              <div class="column">
+                <div class="row">
+                  <label><span>State Code (Place of Supply)</span>  <input type="text" placeholder="State Code (Place of Supply)"></label>
+                </div>
+                <div class="row">
+                  <label><span>Aggregate taxable value</span>  <input type="text" placeholder="Aggregate taxable value"></label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h2>IGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>CGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>SGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span>  <input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-3"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+                <a href="#section-5">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="section-5" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">5</span>Details of Credit/Credit Notes</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <label><span>GSTIN/UIN/Name of recipient</span><input type="text" placeholder="GSTIN/UIN/Name of recipient"></label>
+              <label><span>Type of note (Debit/Credit)</span><input type="text" placeholder="Type of note (Debit/Credit)"></label>
+              <label><span>Type of note (Debit/Credit)</span> <input type="text" placeholder="Type of note (Debit/Credit)"></label>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h2>Debit Note/Credit Note:</h2>
+                <div class="row">
+                  <label><span>No.</span><input type="text" placeholder="No."></label>
+                  <label><span>Date</span><input class="datepicker" type="text" placeholder="Date" readonly></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>Original Invoice</h2>
+                <div class="row">
+                  <label><span>No.</span>  <input type="text" placeholder="No."></label>
+                  <label><span>Date</span><input class="datepicker" type="text" placeholder="Date" readonly></label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <label><span>Differential Value (Plus or Minus)</span><input type="text" placeholder="Differential Value (Plus or Minus)"></label>
+            </div>
+            <h2 style="margin-bottom: 10px;">Differential Tax:</h2>
+            <div class="row">
+              <div class="column">
+                <h2>CGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>SGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span>  <input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-4"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+                <a href="#section-6">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="section-6" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">6</span>Nill rated, Excempted and Non GST outward supplies</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <h2>Interstate supplies to registered person:</h2>
+              <label><span>Goods/Services</span><input type="text" placeholder="Goods/Services"></label>
+              <label><span>Nil Rated (Amount)</span><input type="text" placeholder="Nil Rated (Amount)"></label>
+              <label><span>Exempted (Amount)</span><input type="text" placeholder="Exempted (Amount)"></label>
+            </div>
+            <div class="row">
+              <h2>Intrastate supplies to registered person:</h2>
+              <label><span>Goods/Services</span>  <input type="text" placeholder="Goods/Services"></label>
+              <label><span>Nil Rated (Amount)</span><input type="text" placeholder="Nil Rated (Amount)"></label>
+              <label><span>Exempted (Amount)</span><input type="text" placeholder="Exempted (Amount)"></label>
+            </div>
+            <div class="row">
+              <h2 style="width:138%;">Interstate supplies to Consumer:</h2>
+              <label><span>Goods/Services</span><input type="text" placeholder="Goods/Services"></label>
+              <label><span>Nil Rated (Amount)</span><input type="text" placeholder="Nil Rated (Amount)"></label>
+              <label><span>Exempted (Amount)</span><input type="text" placeholder="Exempted (Amount)"></label>
+              <label><span>Exempted (Amount)</span><input type="text" placeholder="Exempted (Amount)"></label>
+            </div>
+            <div class="row">
+              <h2 style="width:138%;">Intrastate supplies to Consumer:</h2>
+              <label><span>Goods/Services</span>  <input type="text" placeholder="Goods/Services"></label>
+              <label><span>Goods/Services</span>  <input type="text" placeholder="Goods/Services"></label>
+              <label><span>Nil Rated (Amount)</span><input type="text" placeholder="Nil Rated (Amount)"></label>
+              <label><span>Exempted (Amount)</span>  <input type="text" placeholder="Exempted (Amount)"></label>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-5"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+                <a href="#section-7">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="section-7" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">7</span>Tax liability arising on account of time of supply without inssuanc of Invoice in the same period.</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <label><span>GSTIN/UIN/Name of customer</span>  <input type="text" placeholder="GSTIN/UIN/Name of customer"></label>
+              <label><span>State Code</span>  <input type="text" placeholder="State Code"></label>
+              <label><span>Document No.</span> <input type="text" placeholder="Document No."></label>
+            </div>
+            <div class="row">
+              <label><span>Date</span>  <input class="datepicker" type="text" placeholder="Date" readonly></label>
+              <label><span>Goods/Services</span>  <input type="text" placeholder="Goods/Services"></label>
+              <label><span>HSN/SAC of supply</span> <input type="text" placeholder="HSN/SAC of supply"></label>
+            </div>
+            <div class="row">
+              <label><span>Amount of advance received/Value of supply provided without raising a bill</span><input type="text" placeholder="Amount of advance received/Value of supply provided without raising a bill"></label>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h2>IGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Tax</span><input type="text" placeholder="Tax"></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>CGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span>  <input type="text" placeholder="Rate"></label>
+                  <label><span>Tax</span><input type="text" placeholder="Tax"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-6"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+                <a href="#section-8">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="section-8" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">8</span>Tax already paid (on advance receipt/on account of time of supply) on invoice in the current period</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <label><span>Invoice No.</span>  <input type="text" placeholder="Invoice No."></label>
+              <label><span>Transaction Id (A number assigned by the system when tax was paid)</span>  <input type="text" placeholder="Transaction Id (A number assigned by the system when tax was paid)"></label>
+            </div>
+            <h2>Tax paid on receipt of advance/on account of time of supply</h2>
+            <div class="row">
+              <div class="column">
+                <h2>IGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Tax</span><input type="text" placeholder="Tax"></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>CGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span>  <input type="text" placeholder="Rate"></label>
+                  <label><span>Tax</span><input type="text" placeholder="Tax"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-7"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+                <a href="#section-9">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="section-9" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">9</span>Supplies made through e-commerce portals of other companies</h2>
+          <h2 class="form-name" style="margin-top: 8px;">Part I: Supplies made through e-commerce portals of other companies to registered taxable person</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <label><span>Invoice No.</span>  <input type="text" placeholder="Invoice No."></label>
+              <label><span>Date</span>  <input class="datepicker" type="text" placeholder="Date" readonly></label>
+            </div>
+            <div class="row">
+              <label><span>Merchant ID issued by e-commerce operator</span>  <input type="text" placeholder="Merchant ID issued by e-commerce operator"></label>
+              <label><span>GSTIN of e-commerce portal</span>  <input type="text" placeholder="GSTIN of e-commerce portal"></label>
+            </div>
+            <div class="row">
+              <label><span>Gross value of supplies</span>  <input type="text" placeholder="Gross value of supplies"></label>
+              <label><span>Taxable value</span>  <input type="text" placeholder="Taxable value"></label>
+            </div>
+            <div class="row">
+              <label><span>Goods/Services</span>  <input type="text" placeholder="Goods/Services"></label>
+              <label><span>HSN/SAC</span>  <input type="text" placeholder="HSN/SAC"></label>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h2>IGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>CGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span>  <input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-8"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+                <a href="#section-10">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="section-10" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name" style="margin-top: 8px;">Part II: Supplies made through e-commerce portals of other companies to unregistered taxable person</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <label><span>Sr No.</span>  <input type="text" placeholder="Sr No."></label>
+              <label><span>Merchant ID issued by e-commerce portal</span>  <input type="text" placeholder="Merchant ID issued by e-commerce portal"></label>
+            </div>
+            <div class="row">
+              <label><span>GSTIN of e-commerce portal</span>  <input type="text" placeholder="GSTIN of e-commerce portal"></label>
+              <label><span>Place of supply (State Code)</span>  <input type="text" placeholder="Place of supply (State Code)"></label>
+              <label><span>Taxable value</span>  <input type="text" placeholder="Taxable value"></label>
+            </div>
+            <div class="row">
+              <label><span>Gross value of supplies</span>  <input type="text" placeholder="Gross value of supplies"></label>
+              <label><span>Taxable value</span>  <input type="text" placeholder="Taxable value"></label>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h2>IGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span><input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+              <div class="column">
+                <h2>CGST:</h2>
+                <div class="row">
+                  <label><span>Rate</span>  <input type="text" placeholder="Rate"></label>
+                  <label><span>Amount</span><input type="text" placeholder="Amount"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-9"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+                <a href="#section-11">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="section-11" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">10</span>Invoice issued during the tax period including invoices issued in case of inward supplies received from unregistered person liable for charge</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <div class="row">
+              <label><span>Sr No.</span>  <input type="text" placeholder="Sr No."></label>
+              <label><span>Series number of invoice</span>  <input type="text" placeholder="Series number of invoice"></label>
+            </div>
+            <div class="row">
+              <label><span>From</span>  <input type="text" placeholder="From"></label>
+              <label><span>To</span>  <input type="text" placeholder="To"></label>
+            </div>
+            <div class="row">
+              <label><span>Total number of invoices</span>  <input type="text" placeholder="Total number of invoices"></label>
+              <label><span>Number of cancelled invoices</span>  <input type="text" placeholder="Number of cancelled invoices"></label>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-10"><span class="fa fa-hand-o-left"></span>Back</a>
+            <div class="next">
+              <span class="button-popup">
+              <a class="note" href="#">Note</a>
+              </span>
+              <div class="window-popup">
+                <div class="wp-content">
+                  <h2>Important Instruction</h2>
+                  <a href="#" class="button-popup-close">close</a>
+                </div>
+              </div>
+                <a href="#section-12">Save and Continue<span class="fa fa-hand-o-right"></span></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="section-12" class="section">
+      <div class="card-form">
+        <div class="form-title">
+          <h2 class="form-name"><span class="count">11</span>Declaration</h2>
+        </div>
+        <form class="signup">
+          <div class="form-body">
+            <h2>I hereby declare that the information given in this statement is true, correct and complete in every respect.</h2>
+            <h2>I further dclare that i have authority to sumit this statement.</h2>
+            <div class="declare row">
+              <label><span>Place</span><input type="text" placeholder="Place"></label>
+              <label><span>Date</span><span>Date</span><input id="sign-date" type="text" placeholder="Date" readonly></label>
+            </div>
+          </div>
+          <div class="rule"></div>
+          <div class="form-footer">
+            <a href="#section-11"><span class="fa fa-hand-o-left"></span>Back</a>
+            <a href="#section-12">Submit<span class="fa fa-hand-o-right"></span></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="javascript\script.js" charset="utf-8"></script>
+</body>
+</html>

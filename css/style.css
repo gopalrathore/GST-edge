@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@charset "utf-8";
+
+   html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+   blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+   ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+   dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+   tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+   figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+   	margin: 0;
+   	padding: 0;
+   	border: 0;
+   	font-size: 100%;
+   	font: inherit;
+   	vertical-align: baseline;
+   }
+
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure,
+   footer, header, hgroup, menu, nav, section {
+   	display: block;
+   }
+
+   /* Force scrollbar */
+   html { overflow-y: scroll; }
+
+   /* Align radios and text inputs with their label */
+
+   input[type='radio'] { vertical-align: text-bottom; }
+
+   /* Hand cursor on clickable input elements */
+   label,
+   input[type='button'],
+   input[type='submit'],
+   button {
+   	cursor: pointer;
+   }
+
+   strong {
+   	font-weight: bold;
+   	font-family: inherit;
+   	font-size: inherit;
+   }
+
+   em { font-style: italic; }
+
+   img {
+   	border: 0;
+   	vertical-align: middle;
+   }
+
+   sub,
+   sup {
+   	vertical-align: baseline;
+   	position: relative;
+   	font-size: 55%;
+   	line-height: 0;
+   }
+
+   sup { top: -.7em; }
+
+   sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+========================================================================== */
+
+.cf:before,
+.cf:after {
+	display: table;
+	content: " ";
+}
+
+.cf:after { clear: both; }
+
+a {text-decoration: none;}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  //flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #c0392b;
+  font-family: Raleway;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.card-form {
+  width: 90%;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+.card-form .form-title {
+	box-sizing: border-box;
+  width: 100%;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          flex-direction: column;
+  height: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #27ae60;
+  border-radius: 10px 10px 0 0;
+}
+
+h2.form-name {
+	align-self: flex-start;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+}
+.count {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #fff;
+  margin-right: 10px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.card-form .form-body {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.form-body h2 {
+	color: #27ae60;
+	font-size: 14px;
+  font-weight: lighter;
+	margin: 5px 30px 0 30px;
+}
+.card-form .form-body .row {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-form .form-body .row:last-of-type {
+  margin-bottom: 0;
+}
+.card-form .form-body .row input[type="text"] {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  height: 100%;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #e8ebed;
+  color: #576366;
+  font-size: 14px;
+}
+
+
+.card-form .form-footer .note {
+  background: #c0392b;
+}
+
+.card-form .form-body .row label {
+  height: 50px;
+  position: relative;
+  margin: 0 15px;
+}
+
+.card-form .rule {
+  height: 2px;
+  background: #e8ebed;
+  margin: 0px 35px;
+}
+.card-form .form-footer {
+  margin: 0 25px 15px 25px;
+  padding: 15px 10px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+.card-form .form-footer a {
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background: #27ae60;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.card-form .form-footer span {
+  margin-left: 8px;
+}
+
+#section-6 h2 {
+  width: 100%;
+}
+
+label {
+  width: 100%;
+}
+
+#section-12 h2 {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.declare {
+  margin-top: 70px;
+}
+
+label span {
+  color: #0041ff;
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  font-weight: lighter;
+  font-size: 14px;
+  opacity: 0;
+  z-index: 3;
+  cursor: text;
+}
+
+.float-label {
+  animation: floating-label .4s forwards;
+}
+
+@keyframes floating-label {
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.window-popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.wp-content {
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  left: 30%;
+  top: 25%;
+}
+
+.wp-content a {
+  padding: 10px;
+  background: #3498db;
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 5px;
+}
+
+
+.window-popup .wp-content h2 {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
